@@ -296,21 +296,21 @@ body{
   color: rgb(255,255,255);
   transform: scale(1.05);
 }
-.colecao-melhor-avaliados {
+.colecao-mais-visitados {
   margin: 4rem 0;
 }
 
-.colecao-melhor-avaliados .titulo {
+.colecao-mais-visitados .titulo {
   position: relative;
   padding-bottom: 0.5rem;
 }
 
-.colecao-melhor-avaliados .subtitulo {
+.colecao-mais-visitados .subtitulo {
   transition: all 0.3s ease;
   position: relative;
 }
 
-.colecao-melhor-avaliados .subtitulo:hover {
+.colecao-mais-visitados .subtitulo:hover {
   color: rgb(93, 93, 94) !important;
   transform: translateX(5px);
 }
@@ -433,6 +433,24 @@ body{
             font-weight: 700;
             text-transform: uppercase;
         }
+
+footer .list-unstyled li {
+    display: block !important;
+    float: none !important;
+    width: 100% !important;
+}
+
+footer .list-unstyled a::after {
+    display: none !important;
+}
+
+footer .text-secondary {
+    color:rgb(108, 117, 125) !important; /* Cor cinzenta do Bootstrap */
+}
+
+
+
+
 
 
 @media (min-width: 1400px) {

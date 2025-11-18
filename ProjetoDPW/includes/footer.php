@@ -12,20 +12,20 @@
                 <div class="col-6 col-md-2 mb-4">
                     <h6 class="fw-bold text-uppercase mb-3">Descobrir</h6>
                     <ul class="list-unstyled d-flex flex-column">
-                        <li class="mb-2"><a href="melhoravaliados.php" class="text-white-50 text-decoration-underline">Melhor Avaliados</a></li>
-                        <li class="mb-2"><a href="novidadesnperder.php" class="text-white-50 text-decoration-underline">Novidades</a></li>
-                        <li class="mb-2"><a href="recomendacoes.php" class="text-white-50 text-decoration-underline">Recomendações</a></li>
-                        <li class="mb-2"><a href="estantedigital.php" class="text-white-50 text-decoration-underline">Estante Completa</a></li>
+                        <li class="mb-2"><a href="maisvisitados.php" class="text-white-50 text-decoration-none">Mais Visitados</a></li>
+                        <li class="mb-2"><a href="novidadesnperder.php" class="text-white-50 text-decoration-none">Novidades</a></li>
+                        <li class="mb-2"><a href="recomendacoes.php" class="text-white-50 text-decoration-none">Recomendações</a></li>
+                        <li class="mb-2"><a href="estantedigital.php" class="text-white-50 text-decoration-none">Estante Completa</a></li>
                     </ul>
                 </div>
 
                 <div class="col-6 col-md-3 mb-4">
                     <h6 class="fw-bold text-uppercase mb-3">Ajuda e Apoio</h6>
                     <ul class="list-unstyled d-flex flex-column">
-                        <li class="mb-2"><a href="ajuda.php" class="text-white-50 text-decoration-underline">Ajuda (FAQ)</a></li>
-                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-underline">Política de Privacidade</a></li>
-                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-underline">Termos de Utilização</a></li>
-                        <li class="mb-2"><a href="sobrenos.php" class="text-white-50 text-decoration-underline">Sobre Nós</a></li>
+                        <li class="mb-2"><a href="ajuda.php" class="text-white-50 text-decoration-none">Ajuda (FAQ)</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Política de Privacidade</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Termos de Utilização</a></li>
+                        <li class="mb-2"><a href="sobrenos.php" class="text-white-50 text-decoration-none">Sobre Nós</a></li>
                     </ul>
                 </div>
                 
@@ -37,7 +37,10 @@
                     <p class="text-white-50 small mb-4 d-flex align-items-center">
                         <i class="bi bi-geo-alt-fill me-2"></i> Coimbra, Portugal
                     </p>
-
+                    
+                    <a href="#" class="text-white me-3 fs-5"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-3 fs-5"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white fs-5"><i class="bi bi-twitter"></i></a>
                 </div>
 
             </div> <hr class="text-white-50 mt-4 mb-3">

@@ -1,4 +1,6 @@
 <?php
+// --- 1. INICIAR SESSÃO ---
+// session_start() deve ser a PRIMEIRA coisa no seu ficheiro PHP.
 session_start();
 
 // --- 2. LÓGICA DE LOGIN (SÓ EXECUTA SE O FORMULÁRIO FOR SUBMETIDO) ---
@@ -145,7 +147,12 @@ if (isset($_SESSION['login_error'])) {
                                 <!-- ATUALIZADO: Adicionado 'name' -->
                                 <input type="password" class="form-control" id="loginPassword" name="login_password" placeholder="Password" required>
                             </div>
-                            
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="manterSessao">
+                                <label class="form-check-label small text-muted" for="manterSessao">
+                                    Manter a sessão iniciada
+                                </label>
+                            </div>
                             <div class="d-grid gap-2">
                                 <!-- ATUALIZADO: Adicionado 'name="login_submit"' -->
                                 <button type="submit" name="login_submit" class="btn btn-dark fw-bold text-uppercase">Entrar</button>

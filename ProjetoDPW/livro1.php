@@ -10,20 +10,19 @@
   <link rel="stylesheet" href="css/outraspag.css">
 </head>
 <body>
-
  <?php 
   require('includes/header.php');
   ?>
   
    <main class="container my-5">
 
-        <div aria-label="breadcrumb" class="mb-4 fs-6">
+        <nav aria-label="breadcrumb" class="mb-4 fs-6">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.php" class="link-secondary">Início</a></li>
                 <li class="breadcrumb-item"><a href="#" class="link-secondary">Romance</a></li> 
                 <li class="breadcrumb-item active" aria-current="page">Inventário da Solidão</li> 
             </ol>
-        </div>
+        </nav>
 
         <div class="row gy-4 gy-md-0"> 
             <div class="col-sm-4 col-md-4 col-lg-3 text-center text-md-start"> 
@@ -169,7 +168,7 @@
 </main>
 
 <?php 
-  require('includes/footerlog.php');
+  require('includes/footer.php');
   ?>
         <script>
 // SISTEMA DE SUGESTÕES - SEM ALTERAR COMPORTAMENTO DA BARRA

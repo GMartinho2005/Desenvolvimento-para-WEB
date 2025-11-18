@@ -266,7 +266,19 @@ transform: scale(1.05);
   height: 140px;
 }
 
+footer .list-unstyled li {
+    display: block !important;
+    float: none !important;
+    width: 100% !important;
+}
 
+footer .list-unstyled a::after {
+    display: none !important;
+}
+
+footer .text-secondary {
+    color:rgb(108, 117, 125) !important;
+} 
 /* pag Ajuda*/
 .ajuda-banner {
   overflow: hidden;
@@ -394,7 +406,24 @@ background-color: transparent !important;
     transform: none !important;
 }
 /* pag Recomendações*/
+.btn-white {
+  background-color: rgb(255,255,255);
+  color: rgb(0,0,0);
+  border: 3px solid transparent;
+  border-radius: 20px;
+  padding: 0.8rem 2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  font-weight:500;
+}
 
+.btn-white:hover {
+  background-color:	rgb(33, 37, 41);
+  color: rgb(255,255,255);
+  border-color: rgb(255, 255, 255);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
 
 #quiz-intro .btn {
 background-color: rgb(141, 141, 141);
@@ -424,94 +453,6 @@ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
  background-color: rgb(0, 0, 0);
   color: rgb(255,255,255);
   transform: scale(1.05);
-}
-
-.btn-quiz-option {
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-.btn-quiz-option:hover {
-    background-color:rgb(236, 232, 232);
-    border-color:	rgb(33, 37, 41);
-    transform: translateY(-5px); 
-    box-shadow: 0 10px 20px rgba(0,0,0,0.12); 
-    color:rgb(0, 0, 0); 
-}
-
-/* Efeito extra quando clicas (Active) */
-.btn-quiz-option:active {
-    transform: translateY(-1px); /* Baixa um pouco ao clicar */
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-}
-
-/* pag Estante Digital */
-.category-card {
-overflow: hidden; 
-position: relative;
-border: none;
-}
-.category-card .card-img {
-object-fit: cover; /* Garante que a imagem cobre o espaço */
-height: 280px;
-width: 100%;
-transition: transform 0.3s ease; 
- }
-
-.category-card:hover .card-img {
-transform: scale(1.05);
- }
-
-.category-title-box {
-width: 100%;
-padding: 1rem; 
-text-align: center;
-color: rgb(255, 255, 255);
-position: absolute;
-bottom: 100px;
-text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
-}
-        
-.category-card .card-title {
-font-size: 1.2rem;
-text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-}
-
-/* pag Melhor Avaliados */
-.rating-stars {
- color:	rgb(248, 193, 7);
-}
-
-.rating-stars .bi-star {
-color: rgb(209, 209, 209); 
-}
-
-.pagination .page-link {
-    color: #212529; /* Texto escuro */
-}
-
-/* Cor do item ATIVO (o '3' no teu exemplo) */
-.pagination .page-item.active .page-link {
-background-color: #212529; /* Fundo escuro */
-border-color: #212529;
-color: #fff; /* Texto branco */
-z-index: 1; /* Garante que fica por cima */
-}
-
-/* Cor do item ao passar o rato (hover) */
-.pagination .page-link:hover {
-background-color: #e9ecef; /* Cinza muito claro */
-color: #000;
-z-index: 2;
-}
-
-/* Cor da "sombra" de foco (quando clicas) */
-.pagination .page-link:focus {
- box-shadow: 0 0 0 0.25rem rgba(33, 37, 41, 0.25); /* Sombra escura suave */
-}
-
-/* Cor do item desativado (Anterior / Próximo) */
-.pagination .page-item.disabled .page-link {
-color: #6c757d; /* Cinzento 'secondary' */
 }
 
 @media (min-width: 1400px) {
@@ -600,6 +541,9 @@ font-size: 0.95rem;
   overflow: hidden;
   height: 1.2rem;
 }
+
+
+
 }
 
 

@@ -2,57 +2,37 @@
 <html lang="pt-pt">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inventário da Solidão - Letrário Coimbra</title> <!-- Título atualizado -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">    
-    <link rel="stylesheet" href="css/outraspag.css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Livro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  
+  <link rel="stylesheet" href="css/outraspag.css">
 </head>
 <body>
+
  <?php 
- require('includes/header.php');
- ?>
- 
+  require('includes/header.php');
+  ?>
+  
    <main class="container my-5">
 
-        <div aria-label="breadcrumb" class="mb-4 fs-6">
+        <nav aria-label="breadcrumb" class="mb-4 fs-6">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.php" class="link-secondary">Início</a></li>
                 <li class="breadcrumb-item"><a href="#" class="link-secondary">Romance</a></li> 
                 <li class="breadcrumb-item active" aria-current="page">Inventário da Solidão</li> 
             </ol>
-        </div>
+        </nav>
 
         <div class="row gy-4 gy-md-0"> 
-            
             <div class="col-sm-4 col-md-4 col-lg-3 text-center text-md-start"> 
-                <img src="imgs/b1bd2a5bad30e595246e62ba2f3a3117.webp" class="img-fluid rounded shadow-sm mb-3 book-cover-img" alt="Capa do livro Inventário da Solidão">
+                <img src="imgs/b1bd2a5bad30e595246e62ba2f3a3117.webp" alt="Capa do Livro Inventário da Solidão" class="img-fluid rounded shadow-sm mb-3 book-cover-img">
             </div>
 
             <div class="col-sm-8 col-md-8 col-lg-9"> 
                 <h1 class="titulo-livro display-5 fw-bold mb-1 ms-5">Inventário da Solidão</h1>
                 <p class="autor h5 mb-2 text-muted ms-5">de <a href="#sobre-autor" class="link-danger text-decoration-none fw-medium ">João Tordo</a></p>
-                
-                <?php
-               
-                $book_rating = 5; 
-                $book_reviews = 129; 
-                ?>
-
-                <div class="rating-stars mb-2 ms-5" title="Rating: <?php echo $book_rating; ?> de 5 estrelas">
-                    <?php 
-                    for ($i = 1; $i <= 5; $i++):
-                        if ($i <= $book_rating):
-                            echo '<i class="bi bi-star-fill"></i>';
-                        else:
-                            echo '<i class="bi bi-star"></i>';
-                        endif;
-                    endfor; 
-                    ?>
-                    <span class="small text-muted ms-1">(<?php echo $book_reviews; ?> avaliações)</span>
-                </div>
-
                 <p class="small text-muted mb-3 ms-5">
                     Editor: Companhia das Letras <br>
                     Edição: outubro de 2025
@@ -63,7 +43,7 @@
                     <span class="badge bg-danger me-2 p-2 ms-5">Ler Online</span>
                     <span class="badge bg-secondary p-2 ">PDF</span>
                 </div>
-                
+                 
                 <div class="d-flex flex-wrap gap-2 mb-4">
                     <a href="#" class="btn btn-danger btn-md ms-5">Ler Online</a> 
                     <a href="#" class="btn btn-outline-secondary btn-md ">Download PDF</a>
@@ -136,7 +116,7 @@
                 </div>
                 
                 <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start gap-4">
-                    <img src="imgs/b1bd2a5bad30e595246e62ba2f3a3117.webp" alt="Foto de João Tordo" class="author-img shadow-sm"> 
+                    <img src="imgs/b1bd2a5bad30e595246e62ba2f3a3117.webp" alt="" class="author-img shadow-sm"> 
                     <div>
                         <h3 class="sobre-autor h4 fw-bold mb-2">João Tordo</h3>
                         <p class="mb-2">
@@ -153,112 +133,102 @@
         </div>
 
         <div class="row">
-          <div class="col-12">
-              <div class="d-flex justify-content-between align-items-center mb-4">
-                  <h2 class="sobre-autor text-uppercase fw-bold mb-0 me-1">Outros Livros do Autor</h2>
-                  <a class="subtitulo text-decoration-none text-dark fw-semibold me-4 fs-6" href="#">Ver +</a>
-              </div>
-
-              <div class="row g-4 justify-content-center"> 
-                  
-                  <div class="col-6 col-sm-6 col-md-4 col-lg-3"> 
-                      <div class="card book-card h-100"> 
-                          <img src="imgs/b1bd2a5bad30e595246e62ba2f3a3117.webp" class="card-img-top" alt="Capa do Livro">
-                          <div class="card-body text-center">
-                              <h6 class="card-title fw-semibold">O Nome do Vento</h6>
-                              <p class="card-text text-muted small mb-2">Patrick Rothfuss</p>
-                              <a href="livro1.php" class="btn btn-outline-dark btn-sm">Ver mais</a>
-                          </div>
-                      </div>
-                  </div>
-                          
-                  <div class="col-6 col-sm-6 col-md-4 col-lg-3"> 
-                      <div class="card book-card h-100"> 
-                          <img src="imgs/b1bd2a5bad30e595246e62ba2f3a3117.webp" class="card-img-top" alt="Capa do Livro">
-                          <div class="card-body text-center">
-                              <h6 class="card-title fw-semibold">O Nome do Vento</h6>
-                              <p class="card-text text-muted small mb-2">Patrick Rothfuss</p>
-                              <a href="livro1.php" class="btn btn-outline-dark btn-sm">Ver mais</a>
-                          </div>
-                      </div>
-                  </div> 
-                  
-                  
-              </div> 
-          </div> 
+           </div>
+<div class="row">
+    <div class="col-12">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="sobre-autor text-uppercase fw-bold mb-0 me-1">Outros Livros do Autor</h2>
+            <a class="subtitulo text-decoration-none text-dark fw-semibold me-4 fs-6" href="#">Ver +</a>
         </div>
+
+        <div class="row g-4 justify-content-center"> 
+            
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3"> 
+                <div class="card book-card h-100"> 
+                    <img src="imgs/b1bd2a5bad30e595246e62ba2f3a3117.webp" class="card-img-top" alt="">
+                    <div class="card-body text-center">
+                        <h6 class="card-title fw-semibold">O Nome do Vento</h6>
+                        <p class="card-text text-muted small mb-2">Patrick Rothfuss</p>
+                        <a href="livro1.php" class="btn btn-outline-dark btn-sm">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+                         
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3"> 
+                <div class="card book-card h-100"> 
+                    <img src="imgs/b1bd2a5bad30e595246e62ba2f3a3117.webp" class="card-img-top" alt="">
+                    <div class="card-body text-center">
+                        <h6 class="card-title fw-semibold">O Nome do Vento</h6>
+                        <p class="card-text text-muted small mb-2">Patrick Rothfuss</p>
+                        <a href="livro1.php" class="btn btn-outline-dark btn-sm">Ver mais</a>
+                    </div>
+                </div>
+            </div>                        
+            
+        </div> </div> </div>
 </main>
 
 <?php 
- require('includes/footer.php');
- ?>
+  require('includes/footer.php');
+  ?>
+        <script>
+// SISTEMA DE SUGESTÕES - SEM ALTERAR COMPORTAMENTO DA BARRA
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.getElementById('searchInput');
+  const searchSuggestions = document.getElementById('searchSuggestions');
+  const searchForm = document.getElementById('searchForm');
+
+  // Mostrar sugestões apenas quando há texto
+  searchInput.addEventListener('input', function() {
+    if (this.value.length > 0) {
+      searchSuggestions.classList.add('show');
+    } else {
+      searchSuggestions.classList.remove('show');
+    }
+  });
+
+  // Mostrar sugestões também quando clicar (se já tiver texto)
+  searchInput.addEventListener('focus', function() {
+    if (this.value.length > 0) {
+      searchSuggestions.classList.add('show');
+    }
+  });
+
+  // Ocultar sugestões quando clicar fora
+  document.addEventListener('click', function(e) {
+    if (!searchForm.contains(e.target)) {
+      searchSuggestions.classList.remove('show');
+    }
+  });
+
+  // Clicar numa sugestão preenche o input
+  document.querySelectorAll('.suggestion-item').forEach(item => {
+    item.addEventListener('click', function() {
+      const title = this.querySelector('.suggestion-title').textContent;
+      searchInput.value = title;
+      searchSuggestions.classList.remove('show');
+      searchInput.focus(); // Mantém o foco no input
+    });
+  });
+
+  // Tecla ESC fecha sugestões
+  searchInput.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      searchSuggestions.classList.remove('show');
+      searchInput.blur(); // Remove o foco
+    }
+  });
+
+  // Clicar em "Ver todos" submete o form
+  document.querySelector('.see-all-link').addEventListener('click', function(e) {
+    e.preventDefault();
+    searchForm.submit();
+  });
+});
+</script>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Verifica se os elementos existem antes de adicionar event listeners
-      // (Isto previne erros se o header não tiver a barra de pesquisa)
-      const searchInput = document.getElementById('searchInput');
-      const searchSuggestions = document.getElementById('searchSuggestions');
-      const searchForm = document.getElementById('searchForm');
-      const seeAllLink = document.querySelector('.see-all-link');
-
-      if (searchForm && searchInput && searchSuggestions) {
-          // Mostrar sugestões apenas quando há texto
-          searchInput.addEventListener('input', function() {
-            if (this.value.length > 0) {
-              searchSuggestions.classList.add('show');
-            } else {
-              searchSuggestions.classList.remove('show');
-            }
-          });
-
-          // Mostrar sugestões também quando clicar (se já tiver texto)
-          searchInput.addEventListener('focus', function() {
-            if (this.value.length > 0) {
-              searchSuggestions.classList.add('show');
-            }
-          });
-
-          // Ocultar sugestões quando clicar fora
-          document.addEventListener('click', function(e) {
-            if (!searchForm.contains(e.target)) {
-              searchSuggestions.classList.remove('show');
-            }
-          });
-          
-          // Tecla ESC fecha sugestões
-          searchInput.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-              searchSuggestions.classList.remove('show');
-              searchInput.blur(); // Remove o foco
-            }
-          });
-      }
-
-      // Clicar numa sugestão preenche o input
-      document.querySelectorAll('.suggestion-item').forEach(item => {
-        item.addEventListener('click', function() {
-          const title = this.querySelector('.suggestion-title').textContent;
-          if(searchInput) {
-              searchInput.value = title;
-              searchInput.focus(); // Mantém o foco no input
-          }
-          if(searchSuggestions) {
-              searchSuggestions.classList.remove('show');
-          }
-        });
-      });
-
-      // Clicar em "Ver todos" submete o form
-      if (seeAllLink && searchForm) {
-          seeAllLink.addEventListener('click', function(e) {
-            e.preventDefault();
-            searchForm.submit();
-          });
-      }
-    });
-    </script>
 </body>
 </html>

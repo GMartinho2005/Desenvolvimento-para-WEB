@@ -13,7 +13,7 @@
 <body>
 
  <?php 
-  require('includes/headerlog.php');
+  require('includes/header.php');
   ?>
     <main>
         <div class="ajuda-banner position-relative">
@@ -55,12 +55,12 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingRegisto2">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRegisto2">
-                                    É NECESSÁRIO PAGAR PARA ACEDER Á ESTANTE?
+                                    É NECESSÁRIO PAGAR PARA ACEDER AO ACERVO?
                                 </button>
                             </h2>
                             <div id="collapseRegisto2" class="accordion-collapse collapse" aria-labelledby="headingRegisto2" data-bs-parent="#nestedAccordionRegisto">
                                 <div class="accordion-body">
-                                    Não. A Estante Digital ao Letrário Coimbra é e será sempre 100% gratuito, de acordo com a nossa missão de democratizar o acesso à cultura.
+                                    Não. O acesso ao Letrário Coimbra é e será sempre 100% gratuito, de acordo com a nossa missão de democratizar o acesso à cultura.
                                 </div>
                             </div>
                         </div>
@@ -82,23 +82,23 @@
         </div>
 
         <div class="accordion-item">
-            <h2 class="accordion-header" id="headingEstante">
-                <button class="accordion-button collapsed faq-item" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEstante" aria-expanded="false" aria-controls="collapseEstante">
-                    <i class="bi bi-book"></i> A ESTANTE DIGITAL
+            <h2 class="accordion-header" id="headingAcervo">
+                <button class="accordion-button collapsed faq-item" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAcervo" aria-expanded="false" aria-controls="collapseAcervo">
+                    <i class="bi bi-book"></i> O ACERVO DIGITAL
                 </button>
             </h2>
-            <div id="collapseEstante" class="accordion-collapse collapse" aria-labelledby="headingEstante" data-bs-parent="#helpAccordion">
+            <div id="collapseAcervo" class="accordion-collapse collapse" aria-labelledby="headingAcervo" data-bs-parent="#helpAccordion">
                 <div class="accordion-body p-0">
                     
-                    <div class="accordion accordion-flush nested-accordion" id="nestedAccordionEstante">
+                    <div class="accordion accordion-flush nested-accordion" id="nestedAccordionAcervo">
                         
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingEstante1">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEstante1">
+                            <h2 class="accordion-header" id="headingAcervo1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAcervo1">
                                     COMO FAÇO UMA SUGESTÃO DE NOVO TÍTULO?
                                 </button>
                             </h2>
-                            <div id="collapseEstante1" class="accordion-collapse collapse" aria-labelledby="headingEstante1" data-bs-parent="#nestedAccordionEstante">
+                            <div id="collapseAcervo1" class="accordion-collapse collapse" aria-labelledby="headingAcervo1" data-bs-parent="#nestedAccordionAcervo">
                                 <div class="accordion-body">
                                     Adoramos sugestões! Embora não possamos garantir a inclusão de todos os pedidos (devido a restrições de direitos de autor), pode enviar a sua sugestão para o nosso e-mail de apoio.
                                 </div>
@@ -194,7 +194,7 @@
     </main>
 
 <?php 
-  require('includes/footerlog.php');
+  require('includes/footer.php');
   ?>
 
         <script>

@@ -49,7 +49,7 @@
                     <div class="col-md-4 text-center">
                         <i class="bi bi-book-half fs-1"></i>
                         <h4 class="fw-semibold my-3">Acesso Livre</h4>
-                        <p class="text-muted">Todos os livros na nossa estante são de acesso gratuito. Sem custos, sem subscrições.</p>
+                        <p class="text-muted">Todos os livros no nosso acervo são de acesso gratuito. Sem custos, sem subscrições.</p>
                     </div>
                     <div class="col-md-4 text-center">
                         <i class="bi bi-compass-fill fs-1"></i>
@@ -96,7 +96,7 @@
             <div class="container text-center py-5">
                 <h2 class="display-5 fw-bold mb-3">Junte-se à nossa comunidade</h2>
                 <p class="lead mb-4">
-                    O seu próximo livro favorito está à sua espera. Comece a explorar a nossa estante agora.
+                    O seu próximo livro favorito está à sua espera. Comece a explorar o nosso acervo agora.
                 </p>
                 <a href="estantelog.php" class="btn btn-light btn-lg fw-bold px-4">
                     Explorar a Estante
@@ -107,7 +107,7 @@
     </main>
 
 <?php 
-  require('includes/footerlog.php');
+  require('includes/footer.php');
   ?>
 
 <script>

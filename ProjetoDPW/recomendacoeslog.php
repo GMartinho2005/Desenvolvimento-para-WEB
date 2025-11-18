@@ -114,7 +114,7 @@
 </div>
 
 <?php 
-  require('includes/footerlog.php');
+  require('includes/footer.php');
   ?>
 
 

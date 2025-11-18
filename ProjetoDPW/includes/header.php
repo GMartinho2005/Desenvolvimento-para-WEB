@@ -93,7 +93,7 @@ include_once 'connection.php';
       </div>
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
-          <li class="nav-item"><a class="nav-link" href="melhoravaliados.php">Melhor Avaliados</a></li>
+          <li class="nav-item"><a class="nav-link" href="maisvisitados.php">Mais Visitados</a></li>
           <li class="nav-item"><a class="nav-link" href="estantedigital.php">Estante Digital</a></li>
           <li class="nav-item"><a class="nav-link" href="recomendacoes.php">Recomendações</a></li>
           <li class="nav-item"><a class="nav-link" href="ajuda.php">Ajuda</a></li>
